@@ -1,6 +1,13 @@
 package com.ctci.arrays;
 
-public class IsUniq {
+
+/**
+ *Is Unique: Implement an algorithm to determine if a string has all unique characters.
+ * What if you cannot use additional data structures?
+ */
+
+public class A1_1 {
+
   public static final int MAX_CHAR_LIMIT = 128;
 
   /**
@@ -20,7 +27,7 @@ public class IsUniq {
     for (int i = 0; i < string.length(); i++) {
       int rank = string.charAt(i);
       if (rank > MAX_CHAR_LIMIT) {
-        throw new RuntimeException(
+        throw new IllegalArgumentException(
             "Only upper and lower case letters are allowed.");
       }
       if (charIdxMap[rank]) {

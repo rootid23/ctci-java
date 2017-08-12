@@ -6,36 +6,36 @@ import org.junit.Test;
 import java.util.Random;
 
 /**
- * Test class for IsUniq.
+ * Test class for A1_1.
  */
-public class IsUniqTest {
+public class A1_1Test {
   @Test
   public void testIsAllUniqueNullString() {
-    boolean result = IsUniq.isAllUnique(null);
+    boolean result = A1_1.isAllUnique(null);
     Assert.assertEquals(true, result);
   }
 
   @Test
   public void testIsAllUnique() {
-    boolean result = IsUniq.isAllUnique("");
+    boolean result = A1_1.isAllUnique("");
     Assert.assertEquals(true, result);
   }
 
   @Test
   public void testIsAllUniqueFalse() {
-    boolean result = IsUniq.isAllUnique("babb");
+    boolean result = A1_1.isAllUnique("babb");
     Assert.assertEquals(false, result);
   }
 
   @Test
   public void testIsAllUniqueSpecialChars() {
-    boolean result = IsUniq.isAllUnique("b%%%_");
+    boolean result = A1_1.isAllUnique("b%%%_");
     Assert.assertEquals(false, result);
   }
 
   @Test(expected = RuntimeException.class)
   public void testIsAllUniqueUnicodeChars() {
-    IsUniq.isAllUnique("ēēēēēē");
+    A1_1.isAllUnique("ēēēēēē");
   }
 
   @Test
@@ -47,7 +47,7 @@ public class IsUniqTest {
       int nextInt = random.nextInt() % MAX_CHAR_LIMIT;
       str += nextInt;
     }
-    boolean result = IsUniq.isAllUnique(str);
+    boolean result = A1_1.isAllUnique(str);
     Assert.assertEquals(false, result);
   }
 }
