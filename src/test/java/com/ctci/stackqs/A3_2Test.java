@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class A3_2Test {
-
   @Test
   public void testA3_2() {
     A3_2 a3_2 = new A3_2();
@@ -22,5 +21,4 @@ public class A3_2Test {
     a3_2.pop();
     Assert.assertEquals(a3_2.getMin(), -2);
   }
-
 }

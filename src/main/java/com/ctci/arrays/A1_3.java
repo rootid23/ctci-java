@@ -2,23 +2,23 @@ package com.ctci.arrays;
 
 /**
  * URLify: Write a method to replace all spaces in a string with '%20'.
- * You may assume that the string has sufficient space at the end to hold the additional characters,and that you are given the "true" length of the string.
- * (Note: If implementing in Java,please use a character array so that you can perform this operation in place.)
+ * You may assume that the string has sufficient space at the end to hold the
+ * additional characters,and that you are given the "true" length of the string.
+ * (Note: If implementing in Java,please use a character array so that you can
+ * perform this operation in place.)
  * EXAMPLE
  * Input: "Mr John Smith ", 13 Output: "Mr%20John%20Smith"
  */
 public class A1_3 {
-
-
   public String URLify(String iStr, int len) {
     char[] iArr = new char[iStr.length()];
-    for(int i=0,idx=0;i<len;i++) {
-      if(iStr.charAt(i) == ' ') {
+    for (int i = 0, idx = 0; i < len; i++) {
+      if (iStr.charAt(i) == ' ') {
         iArr[idx++] = '%';
         iArr[idx++] = '2';
         iArr[idx++] = '0';
       } else {
-        iArr[idx++]  = iStr.charAt(i);
+        iArr[idx++] = iStr.charAt(i);
       }
     }
     return String.valueOf(iArr);
@@ -49,10 +49,9 @@ public class A1_3 {
         start = i + 1;
       }
     }
-    if (start < end+1) {
+    if (start < end + 1) {
       result += iStr.substring(start, end + 1);
     }
     return result;
   }
-
 }

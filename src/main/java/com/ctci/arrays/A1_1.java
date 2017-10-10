@@ -1,13 +1,12 @@
 package com.ctci.arrays;
 
-
 /**
- *Is Unique: Implement an algorithm to determine if a string has all unique characters.
+ *Is Unique: Implement an algorithm to determine if a string has all unique
+ *characters.
  * What if you cannot use additional data structures?
  */
 
 public class A1_1 {
-
   public static final int MAX_CHAR_LIMIT = 128;
 
   /**

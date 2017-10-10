@@ -2,9 +2,9 @@ package com.ctci.linklist;
 
 public class ListNode {
   int val;
-  ListNode left;
-  ListNode right;
+  ListNode next;
   ListNode(int x) {
-   val = x;
+    val = x;
+    this.next = null;
   }
 }
