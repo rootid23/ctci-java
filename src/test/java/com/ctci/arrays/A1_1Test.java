@@ -1,9 +1,8 @@
 package com.ctci.arrays;
 
+import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.Random;
 
 /**
  * Test class for A1_1.

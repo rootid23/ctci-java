@@ -2,7 +2,6 @@ package com.ctci.trees;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 public class NodeFinder {
   public TreeNode findNode(TreeNode root, int val) {

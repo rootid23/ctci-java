@@ -1,7 +1,6 @@
 package com.ctci.trees;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class Parenthesis {
