@@ -1,7 +1,6 @@
 package com.ctci.arrays;
 
 public class MovieRating {
-
   long movieId;
   float rating;
   String movieName;

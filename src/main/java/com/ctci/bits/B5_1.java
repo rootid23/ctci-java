@@ -11,16 +11,14 @@ package com.ctci.bits;
 // Input N = 10000000000, M = 10011, i = 2, j = 6
 // Output N = 10001001100
 public class B5_1 {
-
-    //############### NOTE : Only use of left shift ###############
-    public static int insertMIntoN(int n,int m, int i,int j) {
-      int allOnes = -1;
-      int setLeftMask = allOnes << (j+1);
-      int setRightMask =  ((1 << i) - 1);
-      int mask = setLeftMask | setRightMask;
-      int nCleared = n & mask;
-      int mShifted = m << i;
-      return nCleared | mShifted;
-    }
-
+  //############### NOTE : Only use of left shift ###############
+  public static int insertMIntoN(int n, int m, int i, int j) {
+    int allOnes = -1;
+    int setLeftMask = allOnes << (j + 1);
+    int setRightMask = ((1 << i) - 1);
+    int mask = setLeftMask | setRightMask;
+    int nCleared = n & mask;
+    int mShifted = m << i;
+    return nCleared | mShifted;
+  }
 }
